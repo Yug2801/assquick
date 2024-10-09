@@ -1,0 +1,75 @@
+/* Modal.css */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures modal is on top of other elements */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    width: 400px; /* Fixed width for modal */
+    animation: fadeIn 0.3s; /* Animation for modal */
+}
+
+.close {
+    cursor: pointer;
+    float: right; /* Aligns the close button to the right */
+    font-size: 20px; /* Larger font size for visibility */
+}
+
+.close:hover {
+    color: #ff0000; /* Change color on hover for better UX */
+}
+
+h2 {
+    margin-top: 0; /* Removes default margin for the header */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stacks form elements vertically */
+}
+
+input,
+select {
+    margin: 10px 0; /* Adds space between form elements */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 16px; /* Consistent font size */
+}
+
+button {
+    margin-top: 10px; /* Space above the button */
+    background-color: #007bff; /* Bootstrap blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px; /* Padding for button */
+    cursor: pointer;
+    font-size: 16px; /* Font size for button text */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Animation for modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

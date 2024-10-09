@@ -1,0 +1,57 @@
+/* src/Card.css */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
+    font-size: 11px; /* Smaller, effective font size */
+    color: #333; /* Subtle, neutral color for readability */
+}
+
+/* Card styles */
+.card {
+    background-color: #fdfdfd; /* Light, neutral background */
+    border: 1px solid #dcdcdc; /* Minimal border with soft contrast */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 10px; /* Compact padding for a clean look */
+    margin: 6px 0; /* Smaller margin between cards */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06); /* Subtle shadow for a modern look */
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight elevation on hover */
+}
+
+.card h4 {
+    margin: 0 0 6px 0;
+    font-size: 1rem; /* Effective, slightly smaller font size for titles */
+    color: #444; /* Softer color for headings */
+    font-weight: 500;
+}
+
+.card p {
+    margin: 2px 0;
+    font-size: 0.85rem; /* Smaller paragraph text */
+    color: #666; /* Softer gray tone for content */
+}
+
+/* Button styles within the card */
+.button-group {
+    display: flex;
+    gap: 5px; /* Compact spacing between buttons */
+    margin-top: 5px; /* Reduced margin for a tighter layout */
+}
+
+.button-group button {
+    background-color: #508fc7; /* Soft blue tone */
+    color: white;
+    border: none;
+    border-radius: 3px; /* Minimal corner radius */
+    padding: 4px 8px; /* Compact button size */
+    font-size: 0.8rem; /* Smaller font size for buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-group button:hover {
+    background-color: #366fa0;
+}
